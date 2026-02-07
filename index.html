@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore di Meme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header-wrapper">
+            <h1>Generatore di TDV Meme</h1>
+            <button class="info-btn" id="infoBtn" aria-label="Informazioni sul progetto">?</button>
+        </div>
+        
+        <!-- Popup informazioni -->
+        <div class="info-modal" id="infoModal">
+            <div class="info-modal-content">
+                <div class="info-modal-header">
+                    <h2>Informazioni sul Progetto</h2>
+                    <button class="close-btn" id="closeInfoModal">×</button>
+                </div>
+                <div class="info-modal-body" id="infoModalBody">
+                    <p>Caricamento informazioni...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="meme-container">
+            <!-- Spazio testo superiore -->
+            <div class="text-area top-text" id="topText" contenteditable="true" data-placeholder="Clicca per aggiungere testo superiore">
+                <span class="placeholder">Clicca per aggiungere testo superiore</span>
+            </div>
+            
+            <!-- Area immagine -->
+            <div class="image-container">
+                <img id="memeImage" src="https://via.placeholder.com/400x300?text=Seleziona+Immagine" alt="Meme">
+                <div class="image-controls">
+                    <button class="upload-btn" id="showGalleryBtn">Scegli da Galleria</button>
+                    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                    <button class="upload-btn secondary" id="uploadBtn">Carica Tua Immagine</button>
+                    <button class="frame-color-toggle" id="frameColorToggle" title="Cambia colore cornice">🟡</button>
+                </div>
+            </div>
+            
+            <!-- Galleria immagini -->
+            <div class="gallery-modal" id="galleryModal">
+                <div class="gallery-content">
+                    <div class="gallery-header">
+                        <h2>Seleziona Immagine Meme</h2>
+                        <button class="close-btn" id="closeGallery">×</button>
+                    </div>
+                    <div class="gallery-grid" id="galleryGrid">
+                        <!-- Le immagini verranno caricate qui -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal per salvare su mobile -->
+            <div class="save-modal" id="saveModal">
+                <div class="save-modal-content">
+                    <div class="save-modal-header">
+                        <h2>Salva nella Camera Roll</h2>
+                        <button class="close-btn" id="closeSaveModal">×</button>
+                    </div>
+                    <div class="save-modal-body">
+                        <p class="save-instructions">Tieni premuta l'immagine e seleziona "Salva immagine"</p>
+                        <img id="saveImagePreview" alt="Meme da salvare">
+                        <button class="download-btn" id="openImageBtn">Apri in nuova finestra</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Spazio testo inferiore -->
+            <div class="text-area bottom-text" id="bottomText" contenteditable="true" data-placeholder="Clicca per aggiungere testo inferiore">
+                <span class="placeholder">Clicca per aggiungere testo inferiore</span>
+            </div>
+        </div>
+        
+        <!-- Dropdown per frasi suggerite -->
+        <div class="suggestions-dropdown" id="suggestionsDropdown">
+            <div class="dropdown-header">
+                <span>Frasi suggerite</span>
+                <button class="close-btn" id="closeDropdown">×</button>
+            </div>
+            <div class="suggestions-list" id="suggestionsList"></div>
+        </div>
+        
+        <button class="download-btn" id="downloadBtn">Scarica Meme</button>
+    </div>
+    
+    <script type="module" src="/src/script.js"></script>
+</body>
+</html>
