@@ -1,0 +1,32 @@
+# Frasi Suggerite per i Meme
+
+- È stato un malinteso
+- Raccontami tutto
+- È solo curiosità
+- Gelosia
+- Chi ti ha scritto?
+- …per amore
+- È colpa tua
+- Ci sentiamo dopo
+- Vedo che sei online
+- Ti controllo
+- Siamo una squadra 
+- Calmati
+- Sei pazzə   
+- Rispetto i tuoi spazi 
+- Senza di me 
+- Facciamo pace?
+- Si 
+- Mi fido di te
+- Stai esagerando 
+- Mi dispiace
+- No non puoi
+- Ti ascolto
+- Io
+- Non uscire
+- Quando ti chiede la password
+- Perchè non mi rispondi?
+- Solo perché mi importa
+- Amore esco con un amicə
+- Stai tranquillə 
+- Va bene amore
